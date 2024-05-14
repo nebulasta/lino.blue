@@ -1,0 +1,15 @@
+
+<div id="footer-container">
+  {% if config.extra.footer_content_license %}
+    <div>Except where otherwise noted, content on this site is licensed under a 
+    {% if config.extra.footer_content_license_link %}
+    <a target="_blank" rel="noopener noreferrer" href="{{config.extra.footer_content_license_link}}">{{config.extra.footer_content_license}}</a>
+    {% else %}
+    {{config.extra.footer_content_license}}
+    {% endif %}
+    license.</div>
+  {% endif %}
+  <div>
+
+  </div>
+</div>

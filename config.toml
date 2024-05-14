@@ -1,0 +1,47 @@
+# The URL the site will be built for
+base_url = "https://lino.blue/"
+title = "lino.blue"
+description="本部"
+default_language = "ja"
+generate_feed = false
+feed_filename = "rss.xml"
+theme = "anemone"
+compile_sass=true
+minify_html = true
+
+
+highlight_theme = "axar"
+build_search_index = false
+taxonomies = [
+    {name = "tags", feed = true},
+]
+
+
+[markdown]
+render_emoji = true
+external_links_target_blank = true
+smart_punctuation = true
+highlight_code = true
+highlight_theme = "gruvbox-dark"
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+
+[link_checker]
+internal_level = "warn"
+
+
+[extra]
+author="nebulatsa"
+display_author = true
+
+full_width = false
+favicon = "/images/favicon.ico"
+default_theme = "dark"
+list_pages = false
+twitter_card = false
+
+enable_katex = true
+disqus = { enabled=false, short_name="donalog" }
